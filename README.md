@@ -26,7 +26,9 @@ git clone https://github.com/rohannguptaa/alexa-trivia-game-skill.git
 2. Click the "Create Skill" button.
 3. Choose the "Custom" option, and then click the "Create Skill" button again.
 4. Enter the skill name and select the language you prefer for your skill.
-5. Choose a template: Select "Start from scratch" and click the "Choose" button.
+5. Choose a model: Select "Custom" model under Recommended model.
+6. For Hosting services Select "Alexa-Hosted Node.js"
+7. Select your preferred Hosting Region for minimised latency
 
 ### 3. Configure Interaction Model
 
@@ -39,14 +41,16 @@ git clone https://github.com/rohannguptaa/alexa-trivia-game-skill.git
 ### 4. Deploy Skill Code to Alexa-Hosted
 
 1. In the Alexa Developer Console, navigate to the "Code" tab.
-2. Enable the "Hosted (Node.js)" option.
-3. Follow the prompts to initialize and deploy your skill code to Alexa-hosted.
+2. Replace the code in "index.js" file with code in `index.js` under lambda folder from the cloned repository.
+3. Click on Deploy to deploy your skill code.
 
 ### 5. Test Your Skill
 
 1. In the Alexa Developer Console, navigate to the "Test" tab.
-2. Enable the "Test is enabled for this skill" option.
+2. Choose "Skill Testing is enabled in : Devleopment"
 3. Use the simulator to test various sample utterances defined in your interaction model.
+4. Say "quiz game" to invoke the skill
+5. The invocation name can be changed later from "Build" Tab
 
 ### 6. Submit Your Skill for Certification
 
@@ -64,8 +68,6 @@ git clone https://github.com/rohannguptaa/alexa-trivia-game-skill.git
 Congratulations! You've successfully deployed an Alexa Trivia Skill using the Alexa Developer Console's Alexa-hosted skill feature. Users can now interact with your skill and enjoy a fun trivia game through their Alexa-enabled devices.
 
 For further improvements and enhancements, feel free to customize the skill's interaction model, add more questions, and refine the user experience.
-
-Happy coding!
 
 ## Resources
 
