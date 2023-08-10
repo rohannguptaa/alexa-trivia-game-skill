@@ -1,1 +1,74 @@
-# alexa-trivia-game-skill
+# Alexa Trivia Game Skill Deployment Guide (Alexa-Hosted Skill Edition)
+
+This guide will walk you through the process of deploying an Alexa Trivia Skill using the Alexa Developer Console's Alexa-hosted skill feature. The skill is designed to provide users with a fun and interactive trivia game experience through voice commands.
+
+## Prerequisites
+
+Before you begin, make sure you have the following:
+
+1. An Amazon Developer account: [Sign up here](https://developer.amazon.com/).
+2. Basic understanding of Alexa Skills Kit and Voice User Interface (VUI) design.
+3. Familiarity with JSON and JavaScript.
+
+## Steps to Deploy
+
+### 1. Clone or Download the Repository
+
+Start by cloning or downloading the GitHub repository containing the Alexa Trivia Skill code:
+
+```bash
+git clone https://github.com/rohannguptaa/alexa-trivia-game-skill.git
+```
+
+### 2. Create an Alexa-Hosted Skill
+
+1. Log in to the [Alexa Developer Console](https://developer.amazon.com/alexa/console/ask).
+2. Click the "Create Skill" button.
+3. Choose the "Custom" option, and then click the "Create Skill" button again.
+4. Enter the skill name and select the language you prefer for your skill.
+5. Choose a template: Select "Start from scratch" and click the "Choose" button.
+
+### 3. Configure Interaction Model
+
+1. In the Alexa Developer Console, navigate to the "Interaction Model" tab.
+2. Click the "JSON Editor" button.
+3. Open the `en-US.json` file under `InteractionModels` folder from the cloned repository.
+4. Copy the content of the file and paste it into the JSON Editor.
+5. Save and build the interaction model.
+
+### 4. Deploy Skill Code to Alexa-Hosted
+
+1. In the Alexa Developer Console, navigate to the "Code" tab.
+2. Enable the "Hosted (Node.js)" option.
+3. Follow the prompts to initialize and deploy your skill code to Alexa-hosted.
+
+### 5. Test Your Skill
+
+1. In the Alexa Developer Console, navigate to the "Test" tab.
+2. Enable the "Test is enabled for this skill" option.
+3. Use the simulator to test various sample utterances defined in your interaction model.
+
+### 6. Submit Your Skill for Certification
+
+1. Once you're satisfied with your skill's functionality and testing, navigate to the "Distribution" tab in the Alexa Developer Console.
+2. Complete all the necessary information, such as the skill's name, icon, description, etc.
+3. Submit your skill for certification.
+
+### 7. Publish Your Skill
+
+1. Once your skill is certified by Amazon, you can choose to publish it to the Alexa Skill Store.
+2. Follow the instructions provided by Amazon to make your skill available to users.
+
+## Conclusion
+
+Congratulations! You've successfully deployed an Alexa Trivia Skill using the Alexa Developer Console's Alexa-hosted skill feature. Users can now interact with your skill and enjoy a fun trivia game through their Alexa-enabled devices.
+
+For further improvements and enhancements, feel free to customize the skill's interaction model, add more questions, and refine the user experience.
+
+Happy coding!
+
+## Resources
+
+- [Alexa Skills Kit Documentation](https://developer.amazon.com/en-US/docs/alexa/alexa-skills-kit-sdk-for-nodejs/overview.html)
+- [Voice Design Guide](https://developer.amazon.com/en-US/docs/alexa/design/welcome.html)
+- [Alexa Developer Console](https://developer.amazon.com/alexa/console/ask)
